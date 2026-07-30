@@ -1,5 +1,4 @@
 function calculateAiCost(tokensUsed) {
-  function calculateAiCost(tokensUsed) {
   const freeToken = 500;
   const tokenPercharge = 100;
   const rate = 5;
@@ -14,6 +13,6 @@ function calculateAiCost(tokensUsed) {
   const cost = costUnits * rate;
   return cost;
 }
-}
+
 
 
