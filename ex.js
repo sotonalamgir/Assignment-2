@@ -1,6 +1,7 @@
-let maths =[90,88,99];
-let sum=0;
-for(add of maths){
-  sum=sum+add;
+function calculateAiCost(tokensUsed) {
+ if (typeof tokensUsed =="string"){
+  return "Invalid";
+ }
 }
-console.log(sum);
+
+console.log(calculateAiCost("8888")); // "invalid"
