@@ -1,5 +1,5 @@
 function matchWinner(teamAGoals, teamBGoals) {
-    if ((typeof teamAGoals=="string")||(typeof teamBGoals=="string")){
+    if ((typeof teamAGoals==="string")||(typeof teamBGoals==="string")){
         return "Invalid";
     }else if((teamAGoals===null)||(teamBGoals===null)){
         return "Invalid";

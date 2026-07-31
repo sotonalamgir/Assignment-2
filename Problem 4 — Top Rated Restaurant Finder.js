@@ -1,6 +1,6 @@
 function topRatedRestaurant(restaurants) {
     let res = Array.isArray(restaurants);
-     if (res==false || restaurants.length === 0) {
+     if (res===false || restaurants.length === 0) {
         return "Invalid";
     }
     let topRestaurant = restaurants[0];

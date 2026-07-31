@@ -1,17 +1,16 @@
 function averageResponseTime(times) {
-  if ((Array.isArray(times) = false)) {
-        return "Invalid";
-   }
-   
-   if (times.length = 0) {
+    if (Array.isArray(times) === false) {
         return "Invalid";
     }
-   
- let total = 0;
-    for (let i = 1; i <= times.length; i++) {
-        total = total + time[i];
+    let checkEveryItems = times.every(item => typeof item === "number");
+    if (times.length === 0 || checkEveryItems===false ){
+        return "Invalid";
     }
-   
-  return total;
+    let total = 0;
+    for (let i = 0; i < times.length; i++) {
+        total = total + times[i];
+    }
+
+    return total / times.length;
 }
-console.log(averageResponseTime([120,200,150,130]));
+

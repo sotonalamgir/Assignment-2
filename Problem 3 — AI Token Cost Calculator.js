@@ -2,7 +2,7 @@ function calculateAiCost(tokensUsed) {
   const freeToken = 500;
   const tokenPercharge = 100;
   const rate = 5;
-  if (typeof tokensUsed == "string" || tokensUsed < 0) {
+  if (typeof tokensUsed === "string" || tokensUsed < 0) {
     return "Invalid";
   }
   if (tokensUsed <= freeToken) {
